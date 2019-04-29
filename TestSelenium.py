@@ -73,7 +73,7 @@ driver.find_element_by_class_name('LC20lb').click()
 
 driver.find_element_by_class_name('first-name').click()
 
-driver.find_element_by_id("form--signin--field--EMAIL_ADDRESS").send_keys('Mac')
+driver.find_element_by_id("form--signin--field--EMAIL_ADDRESS").send_keys("Mac")
 
 
 
