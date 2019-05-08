@@ -24,7 +24,7 @@ driver.get('http://www.google.com')
 
 #driver.find_element_by_name('q').send_keys('Mac\n') #  下一行 \n 代表將字輸入搜尋
 
-#driver.find_element_by_link_text('Gmail').click()
+driver.find_element_by_link_text('Gmail').click()
 
 #driver.find_element_by_class_name('lnk-movie').click()
 
