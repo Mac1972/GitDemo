@@ -1,4 +1,3 @@
-
 from selenium import webdriver
 from selenium.webdriver.support.select import Select
 import time
@@ -25,7 +24,7 @@ driver.get('http://www.google.com')
 
 #driver.find_element_by_name('q').send_keys('Mac\n') #  下一行 \n 代表將字輸入搜尋
 
-#driver.find_element_by_link_text('Gmail').click()
+driver.find_element_by_link_text('Gmail').click()
 
 #driver.find_element_by_class_name('lnk-movie').click()
 
@@ -54,26 +53,20 @@ driver.get('http://www.google.com')
 
 
 '''selectElements = driver.find_element_by_id('month')
-
 months = Select(selectElements)
-
 months.select_by_visible_text('January')
-
 countriesElements = driver.find_element_by_id('country')
-
 counteries = Select(countriesElements)
-
 counteries.select_by_visible_text('Taiwan')
-
 driver.find_element_by_xpath("//div[4]//input[1]").click()'''
 
-driver.find_element_by_name('q').send_keys('Mac\n')
+'''driver.find_element_by_name('q').send_keys('Mac\n')
 
 driver.find_element_by_class_name('LC20lb').click()
 
 driver.find_element_by_class_name('first-name').click()
 
-driver.find_element_by_id("form--signin--field--EMAIL_ADDRESS").send_keys("Mac")
+driver.find_element_by_id("form--signin--field--EMAIL_ADDRESS").send_keys("Mac")'''
 
 
 
@@ -86,6 +79,4 @@ driver.find_element_by_id("form--signin--field--EMAIL_ADDRESS").send_keys("Mac")
 #time.sleep(10)
 
 #driver.quit()
-
-
 
