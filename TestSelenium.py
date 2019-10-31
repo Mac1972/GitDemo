@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.support.select import Select
+from selenium.webdriver.common.action_chains import ActionChains  # 如果要輸入會員信箱&密碼要加這行
 import time
 
 #driver = webdriver.Chrome('D:\Program\chromedriver_win32\chromedriver.exe')  # 驅動程式路徑要設對
@@ -18,7 +19,7 @@ driver.maximize_window()
 
 #driver.get('http://www.amazon.com')
 
-driver.get('http://www.timeanddate.com')
+#driver.get('http://www.timeanddate.com')
 
 #driver.find_element_by_id('nav-your-amazon').click()
 
@@ -54,7 +55,7 @@ driver.get('http://www.timeanddate.com')
 
 
 
-
+'''
 selectElements = driver.find_element_by_id('month')
 months = Select(selectElements)
 months.select_by_visible_text('January')
@@ -62,21 +63,25 @@ countriesElements = driver.find_element_by_id('country')
 counteries = Select(countriesElements)
 counteries.select_by_visible_text('Taiwan')
 driver.find_element_by_xpath("//div[4]//input[1]").click()
-
-
-'''
-driver.find_element_by_name('q').send_keys('Mac\n')
-
-driver.find_element_by_class_name('LC20lb').click()
-
-driver.find_element_by_class_name('first-name').click()
-
-driver.find_element_by_id("form--signin--field--EMAIL_ADDRESS").send_keys("Mac")
 '''
 
 
 
-#driver.save_screenshot('百度.png')
+#driver.find_element_by_name('q').send_keys('Mac\n')
+
+
+driver.get("https://www.maccosmetics.com.tw/")
+
+driver.find_element_by_class_name("first-name").click()
+time.sleep(10)
+driver.find_element_by_id("form--signin--field--EMAIL_ADDRESS").send_keys('xxx@xxx.com')
+time.sleep(10)
+driver.find_element_by_id("form--signin--field--PASSWORD").send_keys('123456')
+time.sleep(10)
+driver.find_element_by_css_selector("#signin > div.field-container > input").click()
+
+
+#driver.save_screenshot('Google.png')
 
 #driver.close()
 
