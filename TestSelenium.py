@@ -76,7 +76,7 @@ driver.find_element_by_class_name("first-name").click()
 time.sleep(10)
 driver.find_element_by_id("form--signin--field--EMAIL_ADDRESS").send_keys('xxx@xxx.com')
 time.sleep(10)
-driver.find_element_by_id("form--signin--field--PASSWORD").send_keys('123456')
+driver.find_element_by_id("form--signin--field--PASSWORD").send_keys('xxxxxx')
 time.sleep(10)
 driver.find_element_by_css_selector("#signin > div.field-container > input").click()
 
